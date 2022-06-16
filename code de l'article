@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{margin-top:0px; margin: 0px; padding-top:0px; background-color:rgb(106, 106, 112); color:BLACK; font-size: 20px;}
+        
+    /*mise en forme du header*/
+        header{color:white;background-color:rgb(17, 17, 32);height:115px; border-bottom:2px solid gray; display:flex; justify-content:space-between;}
+        img{width:100px; height:100px; border-radius:50px;}
+    /*fin de la mise en forme du header*/
+    /*mise en forme du footer*/
+    footer{height:100px; border-top: 2px solid gray; text-align:center;background-color:rgb(128, 51, 51)}
+    /*fin de la mise en forme du footer*/
+    /* debut mise en forme de la section schtml*/
+    .schtml, .prqt, .qqlh,.adehtml, .chtml, .attribut, .ichtml, .ivhtml, .adhtml, .attribut, .evhtml{width:60%; text-align: center;}
+    /*fin de la mise en forme de la section schtml*/
+    table{border-collapse:collapse;background-color:white;color:black;}
+    td{border:2px solid black;}
+    .enfant_ichtml p .i1{background-color: rgb(36, 36, 82);}
+    </style>
+</head>
+<body>
+    <!--debut de la mise en formr et du contenue textuel du header-->
+    <header>
+        <div class="img"><img style="margin-top:10px;" src="logo.png" alt="logo de la chaine Mark-Web"></div>
+        <div style="font-size:30px;margin-top:3px; border-left:2px solid red; padding-left: 15px; height:100px;"><strong style="color:blue;">Mark-web</strong> vous offre une formation gratuite tout au long de cette apprentissage <br> vous aurez la possibiliterde tester vos connaissance acquises.Alors je vous souhaite <br> un bon apprentissage</p> </div>
+        <div style="padding-top:20px;"><strong style="font-size:60px; border-left:2px solid red; border-top-left-radius:15px; border-top-left-radius:15px; padding-left: 5px;">M-W</strong></div>
+    </header>
+    <!--fin de la mise en forme et du contenue textuel du header-->
+
+    
+    <div class="essemble_des_section" style="justify-content:center; margin-top:30px;">
+        <section class="schtml" style="margin:auto;">
+            <h1 style="font-size:50px;">Commencer avec le HTML</h1>
+            <div class="enfant_schtml" style="margin-top:60px;">
+                <p class="texte_de_la_section" style="line-height:28px;">Cet article porte sur les fondement du HTML,tout au long de cet article nous aurons a definir les éléments, les attributs, et tout autre termes important ainsi que leur emplacement adéquate dans le langage.Nous montrons comment un element HTML est structurer, comment une page classique est structurée et expliquons les autres important trait de base du langage. Dans ce parcours nous jouons avec certain element HTML pour exciter votre interêt. </p>
+            </div>
+        </section>
+        <section class="prqt" style="margin:auto;"><!--prqt pour prérequit-->
+            <table style="border:2px solid rgb(255, 255, 255);">
+                <tr></th>
+                    <td>Préréquis</td>
+                    <td>connaissance du web et savoir manipuler un ordinateur</td>
+                </tr>
+                <tr>
+                    <td>Objectif</td>
+                    <td>l'apprenant serat capable à la fin de cet article de reconnaître la structure minimal d'un code HTML et d'expliquer l'utilitée de chaqun de ses élément</td>
+                </tr>
+            </table>
+        </section>  
+
+        <section class="qqlh" style="margin:auto;">
+            <h1 style="font-size:50px;">Qu'est ce que le HTML</h1>
+            <div class="enfant_qqlh" style="margin-top:60px;">
+                <p class="texte_de_la_section" style="line-height:32px;"><strong style="text-decoration:underline rgb(0, 0, 0); color:black">HTML</strong>(<strong style="color:rgb(0, 0, 0)">H</strong>yper <strong style="color:rgb(0, 0, 0)">T</strong>ext <strong style="color:rgb(0, 0, 0)">M</strong>arkup <strong style="color:rgb(0, 0, 0)">L</strong>anguage) n'est pas un langage de programation, mais c'est un langage de balisage qui sert a indiquer au navigateur comment structurer les pages web visitées. Il peut être aussi compliquer mais aussi simple en foncton que le developpeur web souhaite qu'il soit,
+                il se compose d'une série d'<strong>élément</strong> avec lesquels vous pouvez encadrer envelopper ou baliser differentes partie du contenue pour les faire apparaître ou agir d'une certaine manière. Des <strong>balises</strong>encadrante peuvent transformer une petite partie de contenue en un lien vers une autre page sur le web, mettre des mots en italique, etc. Par exemple, la phrase suivante: </p><pre>  essenble de caractère  </pre>
+                <p>cet élément est de type paragraphe envelopper par la balise &lt;p&gt; exemple de la ligne  de code:</p>
+                <pre><span style="background-color: rgb(53, 53, 80); border-top:2px solid blue; border-radius:20px; padding:20px;">&lt;p&gt;esemble de caractère&lt;/p&gt;</span></pre> 
+                <p style="padding:20px; padding-top:20px;  border-top:2px solid blue; background-color:rgb(53, 53, 80); border-radius:20px;">
+                    <span style="padding:10px;background-color:rgb(142, 142, 233);border:2px solid blue; border-radius:30%;">!</span> Note: Il faut remarquer que le HTML n'est pas senssible à la case cet-à-dire que nous pouvons écrire les balises en majuscule ou en minuscule exemple: &lt;tilte&gt;,&lt;TITLE&gt;,&lt;TiTte&gt;,&lt;tItLE&gt; ce code ne possède aucune erreure, cependant cette pratique n'est pas conseilé et il est plus judicieux d'écrire nos balise en minuscule pour question de coherence,lisibilité et autres.
+                </p>
+            </div>
+        </section>
+
+        <section class="adehtml" style="margin:auto;">
+            <h1 style="font-size:50px;">Anatomie d'un élément HTML</h1>
+            <div class="enfant_schtml" style="margin-top:60px;">
+                <p style="line-height:32px;">Régardons notre élément paragraphe d'un peut plus près</p>
+                <div><p style="border-top:2px solid blue;border-radius:20px;padding-top:30px;padding-bottom:30px;margin-left:300px;margin-right:300px;background-color:rgb(53, 53, 80);"></span><span style="background-color:rgb(77, 92, 158);">&lt;p&gt;</span><span style="background-color:rgb(77, 92, 158);margin-left:5px; margin-right:5px; ">essemble de caractère</span><span style="background-color:rgb(77, 92, 158);">&lt;/p&gt;</span></p></div>
+                <ol><li style="text-indent: -500px; text-decoration:underline">les balises</li>
+                    <p>Comme vous l'aurez remarquer nos countenus textuel sont écrit dans des balises c'est le cas de notre example qui a pour balise l'élément  <strong>p</strong>, cet élément à pour voisin un cheuvron ouvrant <strong>&lt;</strong>et un cheuvron ferment <strong>&gt;</strong>.On en distingue trois manieres d'ecrire des balises à savoir:</p>
+                    <ul><li style="text-indent: -500px; text-decoration:underline">balise ouvrante</li>une balise ouvrante est toujour ecrite au début du code elle répond à la synthaxe suivante: 
+                        <div><p style="width:130px;border-radius:20px;padding-top:30px;padding-bottom:30px;margin-left:300px;margin-right:600px;background-color:rgb(53, 53, 80);border:2px solid blue;">&lt;élément&gt;</p><p>Exemple: <span style="color:blue;">&lt;p&gt;</span></p></div><li style="text-indent: -500px; text-decoration:underline"> balises fermentes</li>une balise fermente est toujour ecrite en fin de code ellle réponde à la synthaxe suivante<p style="width:130px;border-radius:20px;padding-top:30px;padding-bottom:30px;margin-left:300px;margin-right:600px;background-color:rgb(53, 53, 80);border:2px solid blue;">&lt;/élément&gt;</p><p>Exemple: <span style="color:blue;">&lt;/h1&gt;</span></p><li style="text-indent: -500px; text-decoration:underline">
+                            balises orphelines</li>une balise orpheline comme sont nom l'indique elle ne possède qu'une seule balise elle peut s'ecrire comme balise ouvrante ou balise fermente:<div style="display:flex;"><p style="border-radius:20px;padding-top:30px;padding-bottom:30px;margin-left:300px;background-color:rgb(53, 53, 80);border:2px solid blue;">&lt;élément&gt;</p><span style="padding-top:60px;padding-right:20px;padding-left:20px;">ou </span><p style="border-radius:20px;padding-top:30px;padding-bottom:30px;margin-right:600px;background-color:rgb(53, 53, 80);border:2px solid blue;">&lt;/élément&gt;</p></div><p>Exemple: <span style="color:blue;">&lt;hr&gt;</span> ou<span style="color:blue;">&lt;/br&gt;</span></p></ul>
+                    <li style="text-indent: -500px; text-decoration:underline; line-height: 60px;;">le contenue</li>
+                    <p>Le contenue est ce qui est écrit entre la balise ouvrante et la balise ferment il peut sagir d'un lien d'image, un lien nous renvoyant a une autre fénêtre etc. Dans notre example du haut notre contenue n'est d'autre que : ensemble de caractère </p>
+                </ol>
+            </div>
+        </section>
+
+        <section class="attribut" style="margin:auto;">
+            <h1 style="font-size:50px;">Attribut</h1>
+            <div class="enfant_att" style="margin-top:60px;">
+
+                <p  style="line-height:32px;"> Dans le code HTML, les éléments nous permets de définir dans quel contextnous souhaitons faire apparaître intervennir notre contenue dans la page web, on répètera le même élément plusieur fois. Alors comment différentier un élément d'un autre ? </p>
+                <p  style="line-height:32px;">C'est là que intervient les Attributs. Les Attributs nous nous permet de placer un identifiant a un élément, de le définir une proprieter et bien d'autres.Cependant, faut retenir que un attribut posède une <strong>Valeur</strong>.Synthaxe globale</p>
+                <div style="border-top:2px solid blue; border-radius:20px; background-color:rgb(45, 45, 59); width:350px;margin-left: 400px;">
+                    <p>&lt; élément attribut="valeur"&gt;contenu&lt;/élément&gt;</p>
+                 </div> 
+                 <p  style="line-height:32px;">Exemple:  <span style="background-color:rgb(45, 45, 59);">&lt;img src="##.png"&gt;</span></p>
+            </div>
+            <p>Dans cet exemple l'élément <span style="background-color:rgb(45, 45, 59);">img</span> a pour attribut <span style="background-color:rgb(45, 45, 59);">src</span> de valeur <span style="background-color:rgb(45, 45, 59);">##.png</span></p>
+            <p style="padding:20px; padding-top:20px; border-top:2px solid blue; background-color:rgb(53, 53, 80); border-radius:20px;">
+                <span style="padding:10px;background-color:rgb(142, 142, 233);border:2px solid blue; border-radius:30%;">!</span> Note: Une valeur est toujour contenue entre les guillemets (" ") ou apostrophe (' ') donc veiller à ne pas les omètres.
+            </p>
+        </section>
+
+        <section class="adhtml" style="margin:auto;">
+            <h1 style="font-size:50px;">Anatomie d'un document HTML</h1>
+            <div class="enfant_adhtml" style="margin-top:60px;">
+                <p  style="line-height:32px;">Déouis le début de cet article nous parlons des éléments HTML,ATTRIBUT mais ça sert à quoi si nous ne savons pas quel est la structure minimale pour qu'un code soit afficher dans nos navigateurs. C'est ce que nous aurons a voir. </p>
+              <div style="border-top:2px solid blue; border-radius:20px; background-color:rgb(38, 38, 54);width:350px;margin-left: 400px;">
+                <p>&lt;!DOCTYPE html&gt;</p><p>&lt;html&gt;</p><p>&lt;head&gt;</p><p>&lt;title&gt;Ma page web&lt;/title&gt;</p><p>&lt;meta charset="utf-8" &gt;</p><p>&lt;/head&gt;</p><p>&lt;body&gt;</p><p>&lt;p&gt; voici ma page web&lt;/p&gt;</p><p>&lt;/body&gt;</p><p>&lt;/html&gt;</p>
+             </div>
+            </div>
+            <p>Etudions l'importance de chaque élément</p>
+            <p>1.<span style="background-color:rgb(45, 45, 59);">&lt;!DOCTYPE html&gt;</span> :définit le type de document.Le <span style="background-color:rgb(45, 45, 59)">DOCTYPE</span> à l'epoque était censé agir comme des liens vers un ensemblede règle que la page HTML devait suivre pour être considérer comme un bon code HTML. Ce qui pourait signifier la vérification automatique des érreur et d'autre chose, il obéissait à la synthaxe suivante: </p>
+            <div style="border-top:2px solid blue; border-radius:20px; background-color:rgb(38, 38, 54);width:400px;margin-left: 400px;">
+              <p>&lt;!DOCTYPE html PUBLIC"-//W3C//DTD XHTML 1.0 Transitional//EN"DTD/xhtml1-transitional.dtd" &gt;</p>
+           </div>
+           <p>cependant cette methode est dite historique. De nos jour la methode la plus courte ,courante et valide est le &lt;!DOCTYPE&gt;</p>
+           <p>
+            <p>2.<span style="background-color:rgb(45, 45, 59);">&lt;html&gt;&lt;/html&gt;</span> :l'élément <span style="background-color:rgb(45, 45, 59);">HTML</span> cet élément est le contenant de tous le code de la page et est parfois  connue comme l'élément <strong>racine</strong></p>
+           </p>
+            <p>3.<span style="background-color:rgb(45, 45, 59);">&lt;head&gt;&lt;/head&gt;</span> :l'élément <span style="background-color:rgb(45, 45, 59)">head</span> a pour rôle de contenir tous ce qui n'est pas afficher dans la page web tel que la description de votre page weeb, l'afficharge des jeux de caractères, les liens perméttant de raccoler votre feuille de style à votre page etc.</p>
+           </p>
+          <p>4.<span style="background-color:rgb(45, 45, 59);">&lt;title&gt;&lt;/title&gt;</span> :a pour rôle de contenir le titre de votre page à ne pas confondre au nom de la page </p>
+         </p>
+         <p>5.<span style="background-color:rgb(45, 45, 59);">&lt;meta charset="utf-8"&gt;</span> :cet élément a pour rôle de faire en sorte que le navigateur prène en compte l'encodage "<strong>utf-8</strong>"lors de l'exécution du code enfin d'afficher certain caractère spéciaux. Lélément méta peut faire bien plus que ça en fonction de l'attribut qu'il posède. Nous verons plus en détail cet élément dans d'autre articles </p>
+        </p>
+        <p>6.<span style="background-color:rgb(45, 45, 59);">&lt;body&gt;&lt;/body&gt;</span> : cet élément a pour rôle de contenir  toutes les informations qui sont afficher dans votre page web. </p>
+        <p>Nous verons bien plus loin l'étendue de leur potentiel</p>
+       </p>
+        </section>
+
+        <section class="ichtml" style="margin:auto;">
+            <h1 style="font-size:50px;">Reference d'entiter:Inclure les caractèe spéciaux en HTML</h1>
+            <div class="enfant_ichtml" style="margin-top:60px;">
+
+                <p  style="line-height:32px;"> En HTML, certains caractères peuvent avoir d'autre signification que celle que nous connaissons et ne peuvent pas être eployer n'importe comment.Ses caractère sont dit <strong style="background-color:none;">spéciaux</strong>, comme caractère speciaux on a :<strong class="i1">&lt;</strong>,<strong class="i1">&apos;</strong>,<strong class="i1">&quot;</strong>,<strong class="i1">&gt;</strong>,<strong class="i1">&amp;</strong>.Si vous voulez vraiment utiliser une esperluette(&)ou un signe inférieure sans qu'il ne soit interpreter par le navigateur comme du code , nous devons utiliser les reférences des caractères de codes spéciaux qui représente ses caractères.
+                    <table style="width:1130px;">
+                         <tr>
+                             <td>Le caractère</td>
+                             <td>Reférences équivalente</td>
+                         </tr>
+                         <tr>
+                              <td>&lt;</td>
+                              <td>&<!---->lt;</td>
+                        </tr>
+                        <tr>
+                              <td>&gt;</td>
+                              <td>&<!---->gt;</td>
+                        </tr>
+                        <tr>
+                           <td>&quot;</td>
+                            <td>&<!---->quot;</td>
+                        </tr>
+                        <tr>
+                          <td>&apos;</td>
+                          <td>&<!---->apos;</td>
+                        </tr>
+                        <tr>
+                             <td>&amp;</td>
+                              <td>&<!---->amp;</td>
+                       </tr>
+                    </table>
+                     <p style="padding:20px; padding-top:20px; border-top:2px solid blue; background-color:rgb(53, 53, 80); border-radius:20px;">
+                          <span style="padding:10px;background-color:rgb(142, 142, 233);border:2px solid blue; border-radius:30%;">!</span> Note: Chaque reférence de caractère spéciaux commence toujour avec une esperluette (&), et se termine par un point-virgule(;) .
+                     </p>
+                     <pre><span style="background-color: rgb(53, 53, 80); border-top:2px solid blue; border-radius:20px; padding:20px;">&lt;!--ecrire le commentaire--&gt;</span></pre> 
+                     <p style="padding:20px; padding-top:20px; border-top:2px solid blue; background-color:rgb(53, 53, 80); border-radius:20px;">
+                         <span style="padding:10px;background-color:rgb(142, 142, 233);border:2px solid blue; border-radius:30%;">!</span> Note: Il faut retenir que les commentaires sont aussi utiliser pour annuler un code
+                     </p>
+                    <p  style="line-height:32px;">Dans l'exemple si-dessous voici deux paragraphes parlant technique web</p> 
+                        <div style="border-top:2px solid blue; border-radius:20px; background-color:rgb(142, 142, 233)">
+                            <p  style="line-height:32px;">&lt;p&gt;En html, un élément se définit par l'élément &lt;p&gt;&lt;/p&gt;</p>
+                            <p  style="line-height:32px;">&lt;p&gt;En html, un élément se définit par l'élément &<!---->lt;p&<!---->gt;&lt;/p&gt;</p>
+                    </div>
+                    <p>Dans la zone de rendue en direct ci-dessous, vous pouvez voir que le premier paragraphe n'est pas corectement afficher : le navigateur interprète le second &lt;p&gt; comme le début d'un nouveau paragraphe! Le second paragraphe est bien interpréter , car les cheuvrons ouvrant(&lt;) et fermente(&gt;) on été remplacer par des caractères spéciaux </p>
+               </p>
+               <img style="width:600px; border-radius:10px;" src="exemple1.png">
+               <p style="padding:20px; padding-top:20px; border-top:2px solid blue; background-color:rgb(53, 53, 80); border-radius:20px;">
+                <span style="padding:10px;background-color:rgb(142, 142, 233);border:2px solid blue; border-radius:30%;">!</span> Note: vous n'avez pas besoin d'utiliser des reférences d'entitée de caractères pour autre symbole les navigateurs moderne les restituerons sans problème à condition que vous définissez votre encodage de caractère en <strong style="color:black;">utf-8</strong>
+            </p>
+                
+            </div>
+        </section>
+
+        <section class="chtml" style="margin:auto;">
+            <h1 style="font-size:50px;">Commentaire en HTML</h1>
+            <div class="enfant_chtml" style="margin-top:60px;">
+                <p  style="line-height:32px;"> Dans cette partie du cour nous allons étudier l'aspect des  <strong>commentaires</strong> .D'abord c'est quoi un <strong >commentaire</strong>, un commentaire n'est rien d'autre que du code mais à la seul différence qu'il ne serait pas pris en compte par l'editeur lors de l'execution du code(l'editeur vas juste cosidérer qu'il n'existe pas lors de l'execution sans toute fois le conserver), son rôle est de permettre au développeur de ce retrouver dans son code ou à un autre de savoir de quoi parle le code.Il repond à la synthaxe suivante : </p>
+                <pre><span style="background-color: rgb(53, 53, 80); border-top:2px solid blue; border-radius:20px; padding:20px;">&lt;!--ecrire le commentaire--&gt;</span></pre> 
+                <p style="padding:20px; padding-top:20px; border-top:2px solid blue; background-color:rgb(53, 53, 80); border-radius:20px;">
+                    <span style="padding:10px;background-color:rgb(142, 142, 233);border-top:2px solid blue; border-radius:30%;">!</span> Note: Il faut retenir que les commentaires sont aussi utiliser pour annuler un code
+                </p>
+            </div>
+        </section>
+
+        <section class="chtml" style="margin:auto;">
+            <h1 style="font-size:50px;">Résumé</h1>
+            <div class="enfant_chtml" style="margin-top:60px;">
+                <p>Nous avons vue tout-au long de cet article que le <span style="color:black;">H</span>yper <span style="color:black;">M</span>arkup <span style="color:black;">L</span>anguage est un langage de <strong>Balisage</strong> dont le but est d'afficher du contenues textuel dans nos pages web, et poour que cela ce façe en bonne uniforme , il fait intervenir des <span style="background-color:rgb(45, 45, 59);">éléments</span> qui nous permetes de structurer nos pages, des <span style="background-color:rgb(45, 45, 59);">attributs</span> qui nous permetes de les identifiers. Mais nous n'allons pas nous limité à ce stricte minimum  car dans le prochain article nous allons parler du <span style="background-color:rgb(45, 45, 59);">HEAD</span></p>
+            </div>
+        </section>
+
+    </div>
+    <footer>
+        <p>Cet article a été fait par <strong style="color:blue">Mark-Web</strong> et disponible sur la plateforme Github </p>
+    </footer>
+</body>
+</html>
